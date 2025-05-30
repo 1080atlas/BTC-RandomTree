@@ -22,10 +22,14 @@ Sharpe Ratio: 3.36
 
 Win Rate: 69.6%
 
-Takeaway: Strong results, but the drawdowns were brutal. Good proof-of-concept, but not really something you'd want to trade live.
+Takeaway: 
+
+Strong results, but the drawdowns were brutal. Good proof-of-concept, but not really something you'd want to trade live.
 
 2. Added Position Sizing Based on Confidence
-What it did: Sized trades depending on how confident the model was. Low confidence = small position, high confidence = full position.
+What it did:
+
+Sized trades depending on how confident the model was. Low confidence = small position, high confidence = full position.
 
 Performance:
 
@@ -35,7 +39,9 @@ Max Drawdown: -3.01%
 
 Sharpe Ratio: 4.02
 
-Takeaway: This added realism by mimicking how a trader might scale into trades, but it watered down the returns. A much smoother equity curve, though.
+Takeaway: 
+
+This added realism by mimicking how a trader might scale into trades, but it watered down the returns. A much smoother equity curve, though.
 
 3. Introduced a 5% Stop-Loss
 What it did: Added a stop-loss so trades would automatically close if they dropped 5% below the entry.
@@ -51,7 +57,10 @@ Sharpe Ratio: 3.55
 Takeaway: This added much-needed downside protection, but it also cut off some trades too early. A decent middle ground between risk and return.
 
 4. Walk-Forward Training (Rolling Retrain)
-What it did: Simulated real-world trading by retraining the model every 30 days on the past year of data. This avoids lookahead bias and adapts to changing markets.
+
+What it did:
+
+Simulated real-world trading by retraining the model every 30 days on the past year of data. This avoids lookahead bias and adapts to changing markets.
 
 Performance:
 
@@ -61,10 +70,14 @@ Max Drawdown: -20.06%
 
 Sharpe Ratio: 5.90
 
-Takeaway: The best overall result. It kept returns high while improving the Sharpe ratio a lot. Walk-forward training made the model more robust over time.
+Takeaway: 
+
+The best overall result. It kept returns high while improving the Sharpe ratio a lot. Walk-forward training made the model more robust over time.
 
 5. Dynamic Exit Based on Daily Confidence
-What it did: Instead of setting a fixed exit, the model re-checked confidence daily and exited the trade early if confidence dropped below 0.5.
+What it did:
+
+Instead of setting a fixed exit, the model re-checked confidence daily and exited the trade early if confidence dropped below 0.5.
 
 Performance:
 
@@ -74,7 +87,9 @@ Max Drawdown: -8.54%
 
 Sharpe Ratio: 3.54
 
-Takeaway: Sounded great in theory but didn’t work well in practice. The model’s confidence was too noisy day-to-day, leading to lots of premature exits. The idea has potential, but it needs smoothing or additional rules.
+Takeaway: 
+
+Sounded great in theory but didn’t work well in practice. The model’s confidence was too noisy day-to-day, leading to lots of premature exits. The idea has potential, but it needs smoothing or additional rules.
 
 Final Thoughts:
 
