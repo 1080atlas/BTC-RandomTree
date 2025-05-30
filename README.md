@@ -2,7 +2,7 @@
 
 Project Goals
 
-The goal of this project was to build a machine learning-based trading strategy for Bitcoin that mimics how a human trader might think: using signals, confidence levels, and managing risk. Instead of optimizing blindly for returns, the idea was to simulate how someone might actually trade — adapting over time, betting bigger when confident, and cutting losses when needed.
+The goal of this project was to build a machine learning-based trading strategy for Bitcoin that mimics how a human trader might think: using signals, confidence levels, and managing risk. Instead of optimizing blindly for returns, the idea was to simulate how someone might actually trade — adapting over time, betting bigger when confident, and cutting losses when needed. I want to clarify that the focus of this project is not the generation of alpha itself, but how to act on a signal - and building a trading system around said signal. 
 
 This project evolved through several versions, each adding a bit more realism and complexity to the strategy logic.
 
