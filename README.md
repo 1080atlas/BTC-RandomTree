@@ -7,8 +7,12 @@ The goal of this project was to build a machine learning-based trading strategy 
 This project evolved through several versions, each adding a bit more realism and complexity to the strategy logic.
 
 Strategy Progression
+
 1. First Version: Simple ML + Fixed 10-Day Exit
-What it did: Trained a model to predict whether BTC would go up over the next 10 days and took trades if the probability was over 0.5.
+
+What it did: 
+
+Trained a model to predict whether BTC would go up over the next 10 days and took trades if the probability was over 0.5.
 
 Exit: Always exited after 10 days.
 
@@ -27,6 +31,7 @@ Takeaway:
 Strong results, but the drawdowns were brutal. Good proof-of-concept, but not really something you'd want to trade live.
 
 2. Added Position Sizing Based on Confidence
+
 What it did:
 
 Sized trades depending on how confident the model was. Low confidence = small position, high confidence = full position.
@@ -44,7 +49,10 @@ Takeaway:
 This added realism by mimicking how a trader might scale into trades, but it watered down the returns. A much smoother equity curve, though.
 
 3. Introduced a 5% Stop-Loss
-What it did: Added a stop-loss so trades would automatically close if they dropped 5% below the entry.
+
+What it did: 
+
+Added a stop-loss so trades would automatically close if they dropped 5% below the entry.
 
 Performance:
 
@@ -75,6 +83,7 @@ Takeaway:
 The best overall result. It kept returns high while improving the Sharpe ratio a lot. Walk-forward training made the model more robust over time.
 
 5. Dynamic Exit Based on Daily Confidence
+   
 What it did:
 
 Instead of setting a fixed exit, the model re-checked confidence daily and exited the trade early if confidence dropped below 0.5.
